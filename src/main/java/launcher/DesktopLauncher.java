@@ -1,12 +1,19 @@
 package launcher;
 
+import application.gui.Window;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+import com.formdev.flatlaf.FlatDarculaLaf;
 
 public class DesktopLauncher
 {
     public static void main(String[] args)
     {
+        FlatDarculaLaf.setup();
+
+        Window window = new Window(400, 600, "Settings");
+        window.open();
+
         Lwjgl3ApplicationConfiguration config = new  Lwjgl3ApplicationConfiguration();
 
         config.setIdleFPS(LaunchConstants.tickRate);
