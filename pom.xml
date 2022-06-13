@@ -89,7 +89,7 @@
                             <archive>
                                 <manifest>
                                     <addClasspath>true</addClasspath>
-                                    <mainClass>core.launcher.DesktopLauncher</mainClass>
+                                    <mainClass>launcher.DesktopLauncher</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
